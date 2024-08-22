@@ -1,0 +1,18 @@
+{% extends "TaskyApp/layout.html" %}
+
+{% block body %}
+
+    {% if tasks_num < 1 %}
+        <div class="empty">
+            <h2>The Todolist is empty try adding Tasks</h2>
+            <a><button class="btn btn-success">Add Tasks</button></a>
+        </div> 
+    {% else %}
+            <ul>
+            {% for task in tasks %}
+                <li>task</li>
+            {% endfor %}
+            </ul>
+    {% endif %}       
+
+{% endblock %}

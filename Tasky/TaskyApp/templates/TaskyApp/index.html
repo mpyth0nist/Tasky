@@ -5,8 +5,9 @@
     <div class="title">Welcome to TASKY</div>
     <div class="description">A minimalistic Todo list app</div>
 
-    <input type="button" class="login" value="Login"/>
-    <input type="button" class="register" value="Sign up"/>
+    <a href="{% url 'view' %}"><input type="button" class="view" value="View ToDolist"/></a>
+    <a href="{% url 'add' %}"><input type="button" class="view" value="Add Tasks"/></a>
+
 
 
 {% endblock %}

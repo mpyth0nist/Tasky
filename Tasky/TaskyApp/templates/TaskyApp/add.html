@@ -1,0 +1,18 @@
+{% extends "TaskyApp/layout.html" %}
+
+{% block body %}
+
+    <form method="POST" action="">
+        {% csrf_token %}
+        <div class="add-tasks">
+            {{form}}
+        </div>
+        <div class="submit-button">
+            <input type="submit" class="btn btn-primary" value="Submit"/>
+        </div>
+
+    </form>
+
+
+
+{% endblock %}
